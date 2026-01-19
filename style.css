@@ -1,10 +1,10 @@
 body{
-    background-color: lightskyblue;
-    color:orangered;
+    background-color: #6BEEE9;
+    color:#FF7100;
 }
 
 p{
     border-radius: 4px;
-    border-color: red;
+    border-color: #A64A00;
     border-style: solid;
 }
