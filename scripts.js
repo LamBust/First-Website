@@ -13,21 +13,22 @@ function ans(){
         mistake.textContent = "Выберите ответ"
         return
     }
-    if (answered == 0 & chosen == 3){
+    else if (answered == 0 & chosen == 3){
         mistake.textContent = "Верный ответ"
         ++answered
         para.textContent = ("Какое значение вернёт math.pi? \n1) 3 \n2) 3.14 \n3) Точное значение π \n4) Приближённое значение π")
     }
-    if (answered == 1 & chosen == 4){
+    else if (answered == 1 & chosen == 4){
         mistake.textContent = "Верный ответ"
         ++answered
         para.textContent = ("Что делает функция math.floor(4.9)? \n1) Округляет до ближайшего целого \n2) Округляет вверх \n3) Возвращает 4.9 \n4) Округляет вниз до 4")
     }
-    if (answered == 2){
+    else if (answered == 2 & chosen == 4){
         mistake.textContent = "Верный ответ"
+        ++answered
         para.textContent = ("Вопросов больше нет!")
     }
-    else {
+    else if (answered != 3){
         mistake.textContent = "Вы ответили неверно, попробуйте ещё раз"
     }
 }
